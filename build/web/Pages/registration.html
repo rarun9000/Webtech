@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title> Registration Form </title>
+        <script src = "Script.js">  </script>
+    </head>
+
+<body align = "center" style="background-color: rgb(246, 166, 212)" >
+<center>
+    <h1 style="margin-top: 20%;" >Register Here!</h1>
+    <form name="form1" action="../jsp/create.jsp" target="_top"  method="post">
+        <table align = "center">
+            <tr>
+                <td>First Name: </td>
+                <td><input name="fname" id="fname" type="text"
+                           placeholder="First Name" onblur="check('fname')"></td>
+                <td><span id="fnameerror"></td>
+            </tr>
+            <tr>
+                <td>Username: </td>
+                <td><input name="uname" id="uname" type="text"
+                           placeholder="username" onblur="check('uname')"></td>
+                <td><span id="unameerror"></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+
+                <td><input name="pass" id="pass" type="password"
+                           placeholder="Password" onblur="check('pass')"></td>
+                <td><span id="passerror"></td>
+            </tr>
+            <tr>
+                <td>Confirm password: </td>
+                <td><input name="cpass" id="cpass" type="password"
+                           placeholder="Confirm Password" onblur="check('cpass')"></td>
+                <td><span id="cpasserror"></td>
+            </tr>
+            <tr>
+                <td>Sex: </td>
+                <td><input type="radio" name="sex" id="m" value="Male" checked>Male
+                    <input type="radio" name="sex" id="f" value="Female">Female</td>
+            </tr>           
+            <tr>
+                <td>Email-Id: </td>
+                <td><input id="email" name="email" type="text"
+                           placeholder="Email address" onblur="check('email')""></td>
+                <td><span id="emailerror"></td>
+            </tr>           
+            <tr>
+                <td><button type="button"
+                            onClick="clear1();">Clear</button></td>
+            </tr>
+            <tr>
+                <td><button type="button"
+                            onClick="display();">Display</button></td>
+            </tr>
+        </table>
+        <button type="button" value="submit" onclick="validateForm()" >Submit</button>
+    </form>
+</center>
+</body>
+</html>

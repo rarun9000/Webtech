@@ -1,0 +1,44 @@
+div{
+    display: flex;
+}
+.flex{
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    padding: 0;
+    margin: 0;
+    height: 10vh;  
+    display: inline-block;
+}
+
+ul{
+    list-style-type: none;
+    height: 10vh;
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    margin-left: 47vw;
+}
+#profile{
+    background-color: #a8324a;
+}
+li{
+    border-right: 1px solid black;
+    font-size: 4vh;
+    font-weight: 300;
+    height: 100%;
+    line-height: 10vh;
+    color: white;
+    float:left;
+    padding: 0 2vw 0 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+li:hover{
+   background-color: white;
+   color: red;
+}
+

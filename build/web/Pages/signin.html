@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Signin Form </title>        
+        <style>
+            body{
+                background-color: rgb(154, 116, 146);
+            }
+            table{
+                background-color: rgb(68, 103, 146);
+                color: white;
+                padding: 10px 20px 25px 20px;
+            }
+            .submit{
+                text-decoration: none;
+                background-color: rgb(68, 180, 146);
+                color: white;
+                border: 2px solid white;
+                height: 30px;
+                width: 60px;
+                margin: 20px 0 0 20px;
+                box-shadow: 0 0 25px rgb(68, 180, 146);
+            }
+            .submit:hover{
+                background-color: #3e947a;
+            }
+        </style>   
+    </head>    
+<body align = "center" bgcolor="cyan" >
+<center>
+    <h1 style="margin-top: 20%; color: white" >Sign-in Here!</h1>
+    <form name="form1" action="../jsp/login.jsp" target="_top" method="post">
+        <table align = "center"><tr>
+            <td>Username: </td>
+            <td><input name="uname" id="uname" type="text" placeholder="username" required></td>
+                
+            </tr>
+            <tr>
+                <td>Password: </td>
+
+                <td><input name="pass" id="pass" type="password"  placeholder="Password" required></td>                
+            </tr>           
+        </table>
+        <button class="submit" value="submit" >Login</button>
+    </form>
+</center>
+</body>
+</html>
